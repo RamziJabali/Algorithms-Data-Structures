@@ -1,3 +1,5 @@
+package Sorting
+
 class QuickSort {
     // we want to choose a pivot randomly
     fun quickSort(array: Array<Int>, startIndex: Int, endIndex: Int): Array<Int> {
