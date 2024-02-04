@@ -2,6 +2,7 @@ class QuickSort {
     // we want to choose a pivot randomly
     fun quickSort(array: Array<Int>, startIndex: Int, endIndex: Int): Array<Int> {
         if (startIndex >= endIndex) return array
+        // Calling partition to sort the array and give us back the pivot point
         val pivot: Int = partition(array, startIndex, endIndex)
         // we're splitting the array into 2 arrays one before the pivot and one after the pivot
         quickSort(array, startIndex, pivot - 1)
